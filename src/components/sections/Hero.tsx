@@ -5,9 +5,9 @@ import star from "../../assets/images/star.png";
 
 const Hero = () => {
   return (
-    <section className="container py-[106px] mb-[126px] flex min-h-[607px] relative max-lg:flex-col h-full max-lg:overflow-x-hidden">
+    <section className="lg:py-[106px] py-8 lg:mb-[126px] flex min-h-[607px] relative max-lg:flex-col h-full max-lg:overflow-x-hidden">
       <div className="w-[787px] space-y-[52px] max-lg:w-[676px] max-md:w-[335px]">
-        <h1 className="text-[120px] text-neutral-600 leading-[108px] max-lg:text-[96px] max-lg:leading-[82px] max-md:text-[52px]">
+        <h1 className="text-[120px] text-neutral-600 leading-[108px] max-lg:text-[96px] max-lg:leading-[82px] max-md:text-[52px] max-sm:text-[46px]">
           See the NFT new world
         </h1>
         <span className="block space-y-[26px]">
@@ -21,7 +21,7 @@ const Hero = () => {
           </button>
         </span>
       </div>
-      <div className="flex gap-5 lg:absolute relative top-0 right-0 max-w-[596px] w-full h-full max-lg:h-[588px] lg:translate-y-[126px] lg:-translate-x-[30px] translate-x-[6%]">
+      <div className="flex gap-5 lg:absolute relative top-0 right-0 max-w-[596px] w-full h-full max-lg:h-[588px] lg:translate-y-[126px] lg:-translate-x-[30px] translate-x-[6%] max-md:translate-x-0">
         <div className="flex items-end">
           <img
             src={humanFace}

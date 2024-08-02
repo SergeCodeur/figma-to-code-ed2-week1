@@ -22,13 +22,13 @@ const footerLinks: footerLinksProps[] = [
 
 const Footer = () => {
   return (
-    <footer className="container space-y-3.5">
+    <footer className="space-y-3.5">
       <div>
         <a href="/">
           <img src={logo} alt="logo" />
         </a>
       </div>
-      <div className="flex items-center justify-between w-full py-8 flex-wrap gap-4">
+      <div className="flex items-center justify-between w-full py-8 flex-wrap gap-4  border-t border-neutral-50">
         <h2 className="text-2xl font-semibold max-sm:text-xl">
           Create Explore & Collect Digital NFTs
         </h2>

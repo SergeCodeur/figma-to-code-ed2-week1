@@ -2,7 +2,7 @@ import Cover from "@/assets/images/cover-fungible_token.png";
 
 const CallToAction = () => {
   return (
-    <div className="container py-[100px]">
+    <div className="py-[100px]">
       <div className="relative h-[336px] rounded-[32px] overflow-hidden">
         <img
           className="w-full h-full object-cover brightness-50"
@@ -10,7 +10,7 @@ const CallToAction = () => {
           alt="image fungible token"
         />
         <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center gap-10 py-[72px]">
-          <h2 className="text-[64px] max-md:text-[46px] max-sm:text-[28px] text-white leading-[40px]">
+          <h2 className="text-[64px] max-md:text-[46px] max-sm:text-[24px] text-white leading-[40px]">
             Build your NFT profile
           </h2>
           <p className="text-white text-xl font-semibold max-sm:text-xs">

@@ -87,7 +87,7 @@ const NFTCollectionCard = () => {
 
 const Collections = () => {
   return (
-    <section className="container space-y-9 pb-[100px] pt-16">
+    <section className="w-full space-y-9 pb-[100px] pt-16">
       <h2 className="text-3xl font-bold">Collections</h2>
       <div className="flex justify-between flex-wrap gap-2.5">
         <CollectionBtnFilter />
