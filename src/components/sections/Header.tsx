@@ -36,16 +36,24 @@ const NavLinks = ({ isOpen }: { isOpen: boolean }) => {
   return (
     <nav
       className={` ${
-        isOpen ? "max-lg:translate-x-[0%]" : ""
-      } max-lg:absolute max-lg:w-full max-lg:h-dvh max-lg:bg-white max-lg:top-0 max-lg:left-0 max-lg:z-[3] max-lg:-translate-x-full transition-transform`}
+        isOpen ? "!translate-x-[0%]" : ""
+      } max-lg:absolute max-lg:w-[492px] max-sm:w-[346px] max-lg:h-screen max-lg:bg-stone-500 max-lg:top-0 max-lg:right-0 max-lg:z-[4] max-lg:translate-x-full transition-transform duration-300 ease-linear`}
     >
-      <ul className="lg:inline-flex flex max-lg:flex-col items-start gap-7 text-neutral-700 font-semibold max-lg:translate-y-[43%] p-[30px]">
+      <ul className="lg:inline-flex flex max-lg:flex-col items-start gap-7 text-neutral-700 font-semibold max-lg:translate-y-[22%] p-[30px] max-sm:pl-10">
         {links.map((link, index) => (
           <li key={index}>
             <a href={link.href}>{link.label}</a>
           </li>
         ))}
       </ul>
+      {isOpen && (
+        <>
+          {/* Vertical line left */}
+          <span className="absolute top-0 max-lg:right-[31px] w-[1px] h-full bg-neutral-50 z-[2] max-sm:right-[19px]"></span>
+          {/* Vertical line bottom */}
+          <span className="absolute left-0 h-[1px] w-full bg-neutral-50 z-[2] bottom-12"></span>
+        </>
+      )}
     </nav>
   );
 };
@@ -55,13 +63,13 @@ const ActionButtons = ({ isOpen }: { isOpen: boolean }) => {
   return (
     <span
       className={`${
-        isOpen ? "!translate-x-[0] max-lg:pointer-events-auto" : ""
-      } inline-flex gap-5 items-center max-lg:absolute z-[3] max-lg:translate-y-[461px] max-lg:-translate-x-[150%] transition-transform max-lg:pointer-events-none`}
+        isOpen ? "!translate-x-[0%] max-lg:pointer-events-auto" : ""
+      } inline-flex gap-5 items-center max-lg:absolute z-[4] max-lg:translate-y-[360px] max-lg:translate-x-[150%] max-lg:right-[22%] max-sm:right-[6%] transition-transform duration-300 ease-linear max-lg:pointer-events-none`}
     >
-      <button className="border-r px-[26px] h-8 font-semibold text-neutral-800 border-neutral-800">
+      <button className="border-r px-[26px] max-sm:px-5 text-base max-sm:text-sm h-8 font-semibold text-neutral-800 border-neutral-800">
         SignUp
       </button>
-      <button className="bg-neutral-800 text-white font-semibold px-[26px] py-2.5 rounded-[42px] text-base">
+      <button className="bg-neutral-800 text-white font-semibold px-[26px] max-sm:px-5 py-2.5 rounded-[42px] text-base max-sm:text-sm">
         Connect Wallet
       </button>
     </span>
@@ -92,8 +100,8 @@ const Header = () => {
   const [menuIsOpen, setMenuIsOpen] = useState<boolean>(false);
 
   return (
-    <header className="container pt-3">
-      <div className="flex justify-between items-center h-[76px]">
+    <header className="pt-3">
+      <div className="flex justify-between items-center h-[76px] max-lg:h-[52px]">
         <a href="/">
           <img src={logo} alt="logo" />
         </a>
@@ -104,6 +112,8 @@ const Header = () => {
           toggleMenu={() => setMenuIsOpen(!menuIsOpen)}
         />
       </div>
+      {/* Show overlay when menu is open */}
+      {menuIsOpen && <div className="fixed inset-0 bg-black/25 z-[3]"></div>}
     </header>
   );
 };
