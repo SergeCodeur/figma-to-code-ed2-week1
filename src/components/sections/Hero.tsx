@@ -1,7 +1,7 @@
 import { MoveRight } from "@/assets/icons";
-import gorilla from "../../assets/images/gorilla.png";
-import humanFace from "../../assets/images/human-face.png";
-import star from "../../assets/images/star.png";
+import gorilla from "@/assets/images/gorilla.png";
+import humanFace from "@/assets/images/human-face.png";
+import star from "@/assets/images/star.png";
 
 const Hero = () => {
   return (
