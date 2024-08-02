@@ -1,37 +1,45 @@
-import moveRight from "../../assets/icons/move-right.svg";
+import { MoveRight } from "@/assets/icons";
 import gorilla from "../../assets/images/gorilla.png";
 import humanFace from "../../assets/images/human-face.png";
 import star from "../../assets/images/star.png";
 
 const Hero = () => {
   return (
-    <section className="container py-[106px] flex min-h-[607px] relative">
-      <div className="w-[787px] space-y-[52px]">
-        <h1 className="text-[120px] text-neutral-600 leading-[108px]">
+    <section className="container py-[106px] mb-[126px] flex min-h-[607px] relative max-lg:flex-col h-full max-lg:overflow-x-hidden">
+      <div className="w-[787px] space-y-[52px] max-lg:w-[676px] max-md:w-[335px]">
+        <h1 className="text-[120px] text-neutral-600 leading-[108px] max-lg:text-[96px] max-lg:leading-[82px] max-md:text-[52px]">
           See the NFT new world
         </h1>
         <span className="block space-y-[26px]">
-          <p className="max-w-[412px] w-full text-base font-semibold text-neutral-400">
+          <p className="max-w-[412px] w-full text-base max-sm:text-sm font-semibold text-neutral-400">
             Vorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
             turpis molestie, di
           </p>
           <button className="flex items-center space-x-4 text-neutral-600">
             <span>Discover Now</span>
-            <img src={moveRight} alt="" />
+            <MoveRight />
           </button>
         </span>
       </div>
-      <div className="absolute top-0 right-0 max-w-[596px] w-full h-full translate-y-[126px] lg:-translate-x-[30px]">
+      <div className="flex gap-5 lg:absolute relative top-0 right-0 max-w-[596px] w-full h-full max-lg:h-[588px] lg:translate-y-[126px] lg:-translate-x-[30px] translate-x-[6%]">
+        <div className="flex items-end">
+          <img
+            src={humanFace}
+            alt=""
+            className="min-w-[287.58px] h-[442.29px] object-cover rounded-[164px]"
+          />
+        </div>
+        <div>
+          <img
+            src={gorilla}
+            alt=""
+            className="min-w-[287.58px] h-[442.29px] object-cover rounded-[164px]"
+          />
+        </div>
         <img
-          src={humanFace}
+          src={star}
           alt=""
-          className="w-[287.58px] h-[442.29px] object-cover rounded-[164px] absolute bottom-0 left-0"
-        />
-        <img src={star} alt="" className="absolute top-[7%] left-[23%]" />
-        <img
-          src={gorilla}
-          alt=""
-          className="w-[287.58px] h-[442.29px] object-cover rounded-[164px] absolute top-0 right-0"
+          className="absolute lg:top-[7%] top-[3%] left-[23%]"
         />
       </div>
     </section>
