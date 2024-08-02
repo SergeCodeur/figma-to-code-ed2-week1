@@ -6,7 +6,7 @@ import star from "../../assets/images/star.png";
 const Hero = () => {
   return (
     <section className="lg:py-[106px] py-8 lg:mb-[126px] flex min-h-[607px] relative max-lg:flex-col h-full max-lg:overflow-x-hidden">
-      <div className="w-[787px] space-y-[52px] max-lg:w-[676px] max-md:w-[335px]">
+      <div className="w-[787px] space-y-[52px] max-lg:space-y-[34px] max-sm:space-y-[18px] max-lg:w-[676px] max-md:w-[335px]">
         <h1 className="text-[120px] text-neutral-600 leading-[108px] max-lg:text-[96px] max-lg:leading-[82px] max-md:text-[52px] max-sm:text-[46px]">
           See the NFT new world
         </h1>
@@ -21,12 +21,12 @@ const Hero = () => {
           </button>
         </span>
       </div>
-      <div className="flex gap-5 lg:absolute relative top-0 right-0 max-w-[596px] w-full h-full max-lg:h-[588px] lg:translate-y-[126px] lg:-translate-x-[30px] translate-x-[6%] max-md:translate-x-0">
+      <div className="flex gap-5 lg:absolute relative top-0 right-0 max-w-[596px] w-full h-full max-lg:h-[588px] lg:translate-y-[126px] max-md:translate-x-0">
         <div className="flex items-end">
           <img
             src={humanFace}
             alt=""
-            className="min-w-[287.58px] h-[442.29px] max-sm:h-[391.29px] max-sm:w-[248.58px] object-cover rounded-[164px]"
+            className="min-w-[287.58px] h-[442.29px] object-cover rounded-[164px]"
           />
         </div>
         <div>
