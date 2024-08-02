@@ -14,7 +14,7 @@ export const NFTCard = React.forwardRef<HTMLDivElement, NFTCardProps>(
     <div
       ref={ref}
       className={cn(
-        "flex w-full flex-col rounded-[20px] p-3 space-y-4 border border-neutral-100 max-w-[282px] max-sm:space-y-2",
+        "flex w-full group flex-col rounded-[20px] p-3 space-y-4 border border-neutral-100 max-w-[282px] max-sm:space-y-2",
         className
       )}
       {...props}
@@ -31,7 +31,7 @@ export const NFTCard = React.forwardRef<HTMLDivElement, NFTCardProps>(
           <span className="text-sm text-neutral-500">{price}</span>
         </span>
       </div>
-      <button className="text-base font-semibold bg-transparent border border-neutral-800 rounded-xl px-[26px] py-[10px] w-full">
+      <button className="text-base font-semibold bg-transparent border border-neutral-800 rounded-xl px-[26px] py-[10px] w-full group-hover:bg-neutral-800 group-hover:text-neutral-50 transition-colors">
         Place a Bid
       </button>
     </div>
@@ -51,7 +51,7 @@ export const FeatureCard = React.forwardRef<HTMLDivElement, FeatureCardProps>(
     <div
       ref={ref}
       className={cn(
-        "flex w-full flex-col rounded-3xl p-6 gap-2.5 bg-neutral-50 max-w-[282px]",
+        "flex w-full hover:bg-neutral-800/10 flex-col rounded-3xl p-6 gap-2.5 bg-neutral-50 max-w-[282px]",
         className
       )}
       {...props}
