@@ -4,9 +4,14 @@ export default {
   theme: {
     container: {
       center: true,
-      padding: "30px",
+      padding: {
+        DEFAULT: "1.25rem",
+        sm: "2rem",
+        lg: "4rem",
+        "2xl": "4rem",
+      },
       screens: {
-        "2xl": "1400px",
+        "2xl": "1330px",
         xl: "1200px",
         lg: "992px",
         md: "768px",
