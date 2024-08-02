@@ -1,7 +1,6 @@
+import { Bars, Close } from "@/assets/icons";
+import logo from "@/assets/images/logo.svg";
 import { useState } from "react";
-import bars from "../../assets/icons/bars.svg";
-import close from "../../assets/icons/close.svg";
-import logo from "../../assets/images/logo.svg";
 
 type Link = {
   label: string;
@@ -56,8 +55,8 @@ const ActionButtons = ({ isOpen }: { isOpen: boolean }) => {
   return (
     <span
       className={`${
-        isOpen ? "max-lg:translate-x-[0] max-lg:pointer-events-auto" : ""
-      } inline-flex gap-5 items-center max-lg:absolute z-[3] max-lg:translate-y-[461px] max-lg:-translate-x-[120%] transition-transform max-lg:pointer-events-none`}
+        isOpen ? "!translate-x-[0] max-lg:pointer-events-auto" : ""
+      } inline-flex gap-5 items-center max-lg:absolute z-[3] max-lg:translate-y-[461px] max-lg:-translate-x-[150%] transition-transform max-lg:pointer-events-none`}
     >
       <button className="border-r px-[26px] h-8 font-semibold text-neutral-800 border-neutral-800">
         SignUp
@@ -80,10 +79,10 @@ const MenuToggle = ({
   return (
     <span className="lg:hidden block relative z-[4]">
       <button
-        className="bg-neutral-50 p-2 h-[30px] w-[30px] rounded-lg select-none"
+        className="bg-neutral-50 p-2 h-[30px] w-[30px] rounded-lg select-none flex justify-center items-center"
         onClick={toggleMenu}
       >
-        <img src={isOpen ? close : bars} alt="menu icon" />
+        {isOpen ? <Close /> : <Bars />}
       </button>
     </span>
   );
