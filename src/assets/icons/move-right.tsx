@@ -1,7 +1,19 @@
-const MoveRight = ({ width = 48, height = 48, ...props }) => (
+type MoveRightProps = {
+  width?: number;
+  height?: number;
+  className?: string;
+};
+
+const MoveRight = ({
+  width = 48,
+  height = 48,
+  className,
+  ...props
+}: MoveRightProps) => (
   <svg
     width={width}
     height={height}
+    className={className}
     viewBox="0 0 48 48"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
