@@ -15,9 +15,9 @@ const Hero = () => {
             Vorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
             turpis molestie, di
           </p>
-          <button className="flex items-center space-x-4 text-neutral-600">
+          <button className="flex items-center space-x-4 text-neutral-600 group">
             <span>Discover Now</span>
-            <MoveRight />
+            <MoveRight className="group-hover:scale-110 transition-transform" />
           </button>
         </span>
       </div>
@@ -26,7 +26,7 @@ const Hero = () => {
           <img
             src={humanFace}
             alt=""
-            className="min-w-[287.58px] h-[442.29px] object-cover rounded-[164px]"
+            className="min-w-[287.58px] h-[442.29px] max-sm:h-[391.29px] max-sm:w-[248.58px] object-cover rounded-[164px]"
           />
         </div>
         <div>
