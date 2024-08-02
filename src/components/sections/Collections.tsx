@@ -18,15 +18,19 @@ const CollectionFilter: collectionProps[] = [
   },
   {
     label: "Art",
+    active: false,
   },
   {
     label: "Celebrities",
+    active: false,
   },
   {
     label: "Gaming",
+    active: false,
   },
   {
     label: "Sport",
+    active: false,
   },
 ];
 
@@ -38,9 +42,9 @@ const CollectionBtnFilter = () => {
         <button
           key={index}
           className={`${
-            item.active
-              ? "bg-neutral-800 text-white"
-              : "text-neutral-800 bg-neutral-50"
+            item.active === true
+              ? "bg-neutral-800 text-white hover:bg-neutral-800/90"
+              : "text-neutral-800 bg-neutral-50 hover:bg-neutral-800/10"
           } px-[26px] py-2.5 rounded-xl text-sm font-semibold`}
         >
           <span>{item.label}</span>
