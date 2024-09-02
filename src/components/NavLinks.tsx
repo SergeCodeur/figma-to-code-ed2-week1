@@ -1,4 +1,4 @@
-import { links } from "@/constants/navLinks";
+import { Navlinks } from "@/constants/navLinks";
 
 const NavLinks = ({ isOpen }: { isOpen: boolean }) => {
   return (
@@ -8,7 +8,7 @@ const NavLinks = ({ isOpen }: { isOpen: boolean }) => {
       } max-lg:absolute max-lg:w-[492px] max-sm:w-[346px] max-lg:h-screen max-lg:bg-stone-500 max-lg:top-0 max-lg:right-0 max-lg:z-[4] max-lg:translate-x-full transition-transform duration-300 ease-linear`}
     >
       <ul className="lg:inline-flex flex max-lg:flex-col items-start gap-7 text-neutral-700 font-semibold max-lg:translate-y-[22%] p-[30px] max-sm:pl-10">
-        {links.map((link, index) => (
+        {Navlinks.map((link, index) => (
           <li key={index}>
             <a href={link.href}>{link.label}</a>
           </li>
