@@ -1,24 +1,5 @@
 import logo from "@/assets/images/logo.svg";
-
-type footerLinksProps = {
-  label: string;
-  href: string;
-};
-
-const footerLinks: footerLinksProps[] = [
-  {
-    label: "Privacy",
-    href: "/",
-  },
-  {
-    label: "Terms & Conditions",
-    href: "/",
-  },
-  {
-    label: "About Us",
-    href: "/",
-  },
-];
+import { footerLinks } from "@/constants/footerLinks";
 
 const Footer = () => {
   return (
