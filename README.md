@@ -1,6 +1,6 @@
-# Digi NFT Website (Figma to Code Edition 2) 🚀
+# Digit - NFT Website (Figma to Code Edition 2) 🚀
 
-Ce projet est le résultat du développement d'un modèle de challenge Figma.
+Ce projet est le résultat du développement d'une maquette de challenge (Figma To Code)[https://www.figmatocodechallenge.com/].
 
 ## React + TypeScript + Vite
 
