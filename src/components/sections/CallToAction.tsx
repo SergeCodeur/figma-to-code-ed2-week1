@@ -16,9 +16,9 @@ const CallToAction = () => {
           <p className="text-white text-xl font-semibold max-sm:text-xs">
             Join almost 10k NFT profiles on Digit !
           </p>
-          <button className="text-neutral-800 bg-white px-[26px] py-3 rounded-[42px] text-base font-semibold">
+          <a className="text-neutral-800 bg-white px-[26px] py-3 rounded-[42px] text-base font-semibold">
             Sign up now
-          </button>
+          </a>
         </div>
       </div>
     </div>
