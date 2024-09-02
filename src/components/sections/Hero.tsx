@@ -25,20 +25,20 @@ const Hero = () => {
         <div className="flex items-end">
           <img
             src={humanFace}
-            alt=""
+            alt="human-face"
             className="min-w-[287.58px] h-[442.29px] object-cover rounded-[164px]"
           />
         </div>
         <div>
           <img
             src={gorilla}
-            alt=""
+            alt="gorilla"
             className="min-w-[287.58px] h-[442.29px] object-cover rounded-[164px]"
           />
         </div>
         <img
           src={star}
-          alt=""
+          alt="star"
           className="absolute lg:top-[7%] top-[3%] left-[23%]"
         />
       </div>
